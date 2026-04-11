@@ -7,7 +7,7 @@ class InventoryItem(Model):
     item_id = AutoField(primary_key=True)
     name = CharField()
     category = CharField()
-    price = IntegerField()
+    price = FloatField()
     stock = IntegerField()
 
     class Meta:
